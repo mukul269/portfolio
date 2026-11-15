@@ -3,98 +3,284 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#10131c">
-  <meta name="description" content="Mukul's portfolio — a collection of selected work, ideas, and ways to get in touch.">
-  <title>Mukul — Portfolio</title>
+  <meta name="theme-color" content="#0b0c0e">
+  <meta name="description" content="MKD — Mukul, ServiceNow Developer and AI enthusiast. Building intelligent systems and exploring the open road. Build, ride, grow.">
+  <title>MKD — Build. Ride. Grow.</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ff8a1f'/%3E%3Ctext x='32' y='43' font-family='Arial Black,Arial' font-weight='900' font-size='26' text-anchor='middle' fill='%230b0c0e'%3EMKD%3C/text%3E%3C/svg%3E">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="page-shell">
-    <header class="topbar">
-      <a class="wordmark" href="#home" aria-label="Mukul, home"><span class="mark">M</span><span>Mukul<span class="accent">.</span></span></a>
-      <nav aria-label="Main navigation">
-        <a href="#about">About</a>
-        <a href="#work">Work</a>
-        <a href="#contact">Contact</a>
-      </nav>
-      <a class="availability" href="#contact"><span></span> Open to opportunities</a>
-    </header>
+  <!-- ✏️  Update these links in one place: search for "YOUTUBE_URL" / "EMAIL" below. -->
+  <header class="nav" id="top">
+    <a class="logo" href="#home" aria-label="MKD home">
+      <span class="logo-mark">MKD</span>
+      <span class="logo-sub">Build · Ride · Grow</span>
+    </a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+      <span></span><span></span>
+    </button>
+    <nav class="nav-links" id="nav-links" aria-label="Main">
+      <a href="#about">About</a>
+      <a href="#channel">Channel</a>
+      <a href="#project">Project</a>
+      <a href="#connect">Connect</a>
+      <a class="btn btn-sm btn-primary" href="https://www.youtube.com/" target="_blank" rel="noreferrer" data-link="YOUTUBE_URL">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg> Subscribe
+      </a>
+    </nav>
+  </header>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="hero-copy">
-          <p class="eyebrow"><span class="eyebrow-line"></span> PORTFOLIO <span class="year">— 2026</span></p>
-          <h1>Building thoughtful<br>things for the <span class="gradient-text">web.</span></h1>
-          <p class="intro">Hi, I’m Mukul — a curious creator who enjoys turning ideas into useful, beautiful digital experiences. This is a little collection of what I do and what I’m exploring.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work">Explore my work <span aria-hidden="true">↘</span></a>
-            <a class="text-link" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+  <main>
+    <!-- ───────────── HERO ───────────── -->
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="kicker reveal"><span class="dot"></span> ServiceNow Developer · AI Enthusiast · Rider</p>
+        <h1 class="hero-title reveal">
+          <span>Build.</span>
+          <span class="outline">Ride.</span>
+          <span class="accent">Grow.</span>
+        </h1>
+        <p class="hero-intro reveal">
+          I’m <strong>Mukul</strong> — I build intelligent systems by day and chase the horizon on two wheels by weekend.
+          This is where code, the open road and a disciplined mind meet.
+        </p>
+        <div class="hero-cta reveal">
+          <a class="btn btn-primary" href="https://www.youtube.com/" target="_blank" rel="noreferrer" data-link="YOUTUBE_URL">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg> Watch on YouTube
+          </a>
+          <a class="btn btn-ghost" href="#project">See the build <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal" aria-hidden="true">
+        <div class="scene">
+          <div class="sky"></div>
+          <div class="sun"></div>
+          <svg class="mountains" viewBox="0 0 600 200" preserveAspectRatio="none">
+            <path class="m-back" d="M0 140 L70 90 L130 120 L210 55 L290 115 L360 70 L440 125 L520 80 L600 120 V200 H0Z"/>
+            <path class="m-front" d="M0 170 L90 130 L170 160 L260 115 L340 160 L430 125 L520 165 L600 140 V200 H0Z"/>
+          </svg>
+          <div class="ground">
+            <div class="road">
+              <div class="lane"></div>
+            </div>
           </div>
-          <div class="social-links" aria-label="Social links">
-            <a href="https://github.com/mukul269" target="_blank" rel="noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-            <span class="social-divider">/</span>
-            <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
+          <div class="grid-overlay"></div>
+        </div>
+
+        <div class="hud hud-top">
+          <span><i class="live"></i> REC · MOTOVLOG</span>
+          <span>NH-48 · KM <b class="odo">0427</b></span>
+        </div>
+
+        <div class="hud-card">
+          <div class="hud-card-head"><span>~/mkd</span><span class="chip">AI • ON</span></div>
+          <pre><code><span class="c-k">const</span> journey = {
+  build: <span class="c-s">'intelligent systems'</span>,
+  ride:  <span class="c-s">'long highways'</span>,
+  grow:  <span class="c-s">'mind & body'</span>,
+};</code></pre>
+        </div>
+
+        <div class="speedo">
+          <svg viewBox="0 0 120 70">
+            <path class="speedo-track" d="M10 65 A50 50 0 0 1 110 65"/>
+            <path class="speedo-fill" d="M10 65 A50 50 0 0 1 110 65"/>
+          </svg>
+          <div class="speedo-read"><b>88</b><span>km/h</span></div>
+        </div>
+      </div>
+
+      <a class="scroll-cue" href="#about" aria-label="Scroll to About"><span></span></a>
+    </section>
+
+    <!-- ───────────── TICKER ───────────── -->
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker-track">
+        <span>Artificial Intelligence</span><i>✦</i><span>ServiceNow</span><i>✦</i><span>DIY Builds</span><i>✦</i><span>Electronics</span><i>✦</i><span>Motovlogs</span><i>✦</i><span>Highway Rides</span><i>✦</i><span>Martial Arts</span><i>✦</i><span>Books</span><i>✦</i><span>Lifestyle Optimization</span><i>✦</i>
+        <span>Artificial Intelligence</span><i>✦</i><span>ServiceNow</span><i>✦</i><span>DIY Builds</span><i>✦</i><span>Electronics</span><i>✦</i><span>Motovlogs</span><i>✦</i><span>Highway Rides</span><i>✦</i><span>Martial Arts</span><i>✦</i><span>Books</span><i>✦</i><span>Lifestyle Optimization</span><i>✦</i>
+      </div>
+    </div>
+
+    <!-- ───────────── ABOUT ───────────── -->
+    <section class="section about" id="about">
+      <header class="section-head reveal">
+        <span class="label"><b>01</b> About</span>
+        <h2>Two lanes.<br><span class="accent">One road.</span></h2>
+      </header>
+
+      <div class="lanes">
+        <article class="lane-card lane-pro reveal">
+          <div class="lane-tag">By profession</div>
+          <h3>The Builder</h3>
+          <p>ServiceNow Developer and AI enthusiast. I design workflows that think — automating the boring, surfacing what matters, and making enterprise tools feel effortless.</p>
+          <ul class="pill-list">
+            <li>ServiceNow</li><li>AI / LLMs</li><li>Automation</li><li>JavaScript</li><li>Electronics</li>
+          </ul>
+        </article>
+
+        <div class="lane-divider" aria-hidden="true"><span></span></div>
+
+        <article class="lane-card lane-passion reveal">
+          <div class="lane-tag">By passion</div>
+          <h3>The Explorer</h3>
+          <p>Rider, driver, martial artist and reader. Long-distance highways teach patience, the mat teaches discipline, and books keep the engine of curiosity running.</p>
+          <ul class="pill-list">
+            <li>Rider</li><li>Driver</li><li>Martial Artist</li><li>Reader</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────────── CHANNEL ───────────── -->
+    <section class="section channel" id="channel">
+      <header class="section-head split reveal">
+        <div>
+          <span class="label"><b>02</b> On the channel</span>
+          <h2>Welcome to <span class="accent">MKD.</span></h2>
+        </div>
+        <p>Bridging the gap between building intelligent systems and exploring the open road. Here’s what to expect on every ride.</p>
+      </header>
+
+      <div class="pillars">
+        <article class="pillar pillar-wide reveal" style="--tone: var(--cyan)">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/><path d="M10 10h4v4h-4z"/></svg>
+          </div>
+          <span class="pillar-num">01</span>
+          <h3>AI &amp; ServiceNow</h3>
+          <p>Deep dives into AI and ServiceNow development — real builds, real problems, explained clearly.</p>
+        </article>
+
+        <article class="pillar reveal" style="--tone: var(--lime)">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24"><path d="M14.7 6.3a4 4 0 0 0-5.4 5.4L3 18l3 3 6.3-6.3a4 4 0 0 0 5.4-5.4l-2.6 2.6-2.4-.6-.6-2.4z"/></svg>
+          </div>
+          <span class="pillar-num">02</span>
+          <h3>DIY &amp; Electronics</h3>
+          <p>Tinkering, soldering and making things that blink, beep and work.</p>
+        </article>
+
+        <article class="pillar reveal" style="--tone: var(--amber)">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24"><circle cx="5.5" cy="16.5" r="3.5"/><circle cx="18.5" cy="16.5" r="3.5"/><path d="M5.5 16.5 9 9h5l4.5 7.5M12 9l-1-3H8M14 9l2-3h2"/></svg>
+          </div>
+          <span class="pillar-num">03</span>
+          <h3>Motovlogs</h3>
+          <p>Long-distance highway rides, routes and the stories in between.</p>
+        </article>
+
+        <article class="pillar reveal" style="--tone: var(--red)">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24"><circle cx="12" cy="4.5" r="2"/><path d="M12 7v6l-4 7M12 13l4 7M5 10l7-1 7 1"/></svg>
+          </div>
+          <span class="pillar-num">04</span>
+          <h3>Martial Arts</h3>
+          <p>The philosophy behind the practice — focus, humility and control.</p>
+        </article>
+
+        <article class="pillar reveal" style="--tone: var(--violet)">
+          <div class="pillar-icon">
+            <svg viewBox="0 0 24 24"><path d="M3 12h4l3-8 4 16 3-8h4"/></svg>
+          </div>
+          <span class="pillar-num">05</span>
+          <h3>Lifestyle Optimization</h3>
+          <p>Habits, reading and systems for a sharper, calmer, stronger life.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ───────────── FEATURED PROJECT ───────────── -->
+    <!-- ✏️  Sample project — replace the title, copy, tags and links with your real build. -->
+    <section class="section project" id="project">
+      <header class="section-head reveal">
+        <span class="label"><b>03</b> Featured build</span>
+        <h2>From the <span class="accent">garage.</span></h2>
+      </header>
+
+      <article class="feature reveal">
+        <div class="feature-visual" aria-hidden="true">
+          <div class="mock">
+            <div class="mock-bar"><i></i><i></i><i></i><span>incident_triage.ai</span></div>
+            <div class="mock-body">
+              <div class="flow">
+                <div class="node n-in"><small>INPUT</small>New incident</div>
+                <div class="wire"><span></span></div>
+                <div class="node n-ai"><small>AI</small>Classify &amp; summarise</div>
+                <div class="wire"><span></span></div>
+                <div class="node n-out"><small>OUTPUT</small>Routed to team</div>
+              </div>
+              <div class="mock-stats">
+                <div><b>92%</b><span>auto-categorised</span></div>
+                <div><b>−40%</b><span>time to assign</span></div>
+                <div><b>24/7</b><span>always on</span></div>
+              </div>
+              <div class="bars"><span style="--h:40%"></span><span style="--h:65%"></span><span style="--h:52%"></span><span style="--h:80%"></span><span style="--h:70%"></span><span style="--h:95%"></span><span style="--h:88%"></span></div>
+            </div>
           </div>
         </div>
-        <div class="hero-art" aria-label="Abstract colorful geometric artwork" role="img">
-          <div class="art-orbit orbit-one"></div>
-          <div class="art-orbit orbit-two"></div>
-          <div class="art-sun"></div>
-          <div class="art-grid"></div>
-          <div class="art-caption"><span>IDEAS INTO<br>EXPERIENCES</span><span class="caption-star">✳</span></div>
-          <span class="art-index">01 / 04</span>
-        </div>
-        <a class="scroll-hint" href="#about"><span class="scroll-dot"></span> SCROLL TO EXPLORE</a>
-      </section>
 
-      <section class="about section" id="about">
-        <div class="section-label"><span>01</span> A LITTLE ABOUT ME</div>
-        <div class="about-content">
-          <h2>Making the digital<br>feel a little more <span class="serif-italic">human.</span></h2>
-          <div class="about-details">
-            <p>I like learning how things work, finding the simple idea in a complicated problem, and making something people enjoy using. I’m currently building my skills and looking for interesting problems to solve.</p>
-            <div class="traits"><span>Always learning</span><span>Detail-minded</span><span>People first</span></div>
+        <div class="feature-info">
+          <span class="feature-tag">ServiceNow × AI</span>
+          <h3>Smart Incident Triage</h3>
+          <p>An AI layer on top of ServiceNow that reads incoming incidents, summarises them, predicts the right category and priority, and routes them to the right team — so engineers spend time fixing, not sorting.</p>
+          <ul class="feature-points">
+            <li>Natural-language summaries on every ticket</li>
+            <li>Category &amp; assignment-group prediction</li>
+            <li>Built with Flow Designer, Script Includes &amp; an LLM API</li>
+          </ul>
+          <ul class="pill-list">
+            <li>ServiceNow</li><li>Flow Designer</li><li>JavaScript</li><li>LLM</li><li>REST</li>
+          </ul>
+          <div class="feature-cta">
+            <a class="btn btn-primary" href="https://github.com/mukul269" target="_blank" rel="noreferrer">View on GitHub <span aria-hidden="true">↗</span></a>
+            <a class="btn btn-ghost" href="https://www.youtube.com/" target="_blank" rel="noreferrer" data-link="YOUTUBE_URL">Watch the build <span aria-hidden="true">▶</span></a>
           </div>
         </div>
-      </section>
+      </article>
 
-      <section class="work section" id="work">
-        <div class="section-heading">
-          <div class="section-label"><span>02</span> SELECTED WORK</div>
-          <p>A few things I’ve made<br>or am excited to make.</p>
+      <p class="more-soon reveal"><span class="lane-dash"></span> More builds on the road ahead</p>
+    </section>
+
+    <!-- ───────────── PHILOSOPHY ───────────── -->
+    <section class="creed reveal" aria-label="Philosophy">
+      <p>
+        Precision in <em>code</em>.<br>
+        Patience on the <em>highway</em>.<br>
+        Discipline on the <em>mat</em>.
+      </p>
+    </section>
+
+    <!-- ───────────── CONNECT ───────────── -->
+    <section class="section connect" id="connect">
+      <div class="connect-card reveal">
+        <span class="label"><b>04</b> Join the journey</span>
+        <h2>Let’s build, ride<br>&amp; <span class="accent">grow together.</span></h2>
+        <p>New videos on AI, ServiceNow, DIY and the open road. Subscribe — or say hi if you want to collaborate.</p>
+        <div class="connect-actions">
+          <a class="btn btn-primary btn-lg" href="https://www.youtube.com/" target="_blank" rel="noreferrer" data-link="YOUTUBE_URL">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5.5v13l11-6.5z"/></svg> Subscribe to MKD
+          </a>
+          <a class="btn btn-ghost btn-lg" href="mailto:your.email@example.com" data-link="EMAIL">Say hello <span aria-hidden="true">✉</span></a>
         </div>
-        <div class="project-grid">
-          <article class="project-card project-lilac">
-            <div class="project-visual visual-one"><div class="visual-window"><div class="window-top"><i></i><i></i><i></i></div><div class="window-content"><span class="window-kicker">YOUR NEXT BIG IDEA</span><b>Make room<br>for good work.</b><div class="window-button"></div></div></div><span class="visual-number">01</span></div>
-            <div class="project-info"><div><h3>Project One</h3><p>A short description of the challenge, your approach, and what you built.</p></div><a class="project-arrow" href="#contact" aria-label="Ask about Project One">↗</a></div>
-            <div class="tags"><span>Web design</span><span>Development</span></div>
-          </article>
-          <article class="project-card project-peach">
-            <div class="project-visual visual-two"><div class="phone"><div class="phone-camera"></div><span class="phone-label">GOOD<br>THINGS<br>GROW.</span><div class="phone-leaf">✳</div><div class="phone-bottom"><span></span><span></span><span></span></div></div><span class="visual-number">02</span></div>
-            <div class="project-info"><div><h3>Project Two</h3><p>Replace this with a project you’re proud of and the impact it made.</p></div><a class="project-arrow" href="#contact" aria-label="Ask about Project Two">↗</a></div>
-            <div class="tags"><span>UI / UX</span><span>Mobile</span></div>
-          </article>
-          <article class="project-card project-mint">
-            <div class="project-visual visual-three"><div class="shape-stack"><div class="shape shape-back"></div><div class="shape shape-mid"></div><div class="shape shape-front">HELLO<br>WORLD<span>✳</span></div></div><span class="visual-number">03</span></div>
-            <div class="project-info"><div><h3>Project Three</h3><p>Share a tool, experiment, or side project you’d love people to discover.</p></div><a class="project-arrow" href="#contact" aria-label="Ask about Project Three">↗</a></div>
-            <div class="tags"><span>Creative coding</span><span>Experiment</span></div>
-          </article>
+        <div class="socials">
+          <a href="https://www.youtube.com/" target="_blank" rel="noreferrer" data-link="YOUTUBE_URL">YouTube</a>
+          <a href="https://github.com/mukul269" target="_blank" rel="noreferrer">GitHub</a>
+          <a href="https://www.linkedin.com/" target="_blank" rel="noreferrer">LinkedIn</a>
         </div>
-        <p class="edit-note">✳ Starter project cards — swap in your real work, links, and results.</p>
-      </section>
+      </div>
+    </section>
+  </main>
 
-      <section class="contact section" id="contact">
-        <div class="section-label"><span>03</span> HAVE A GOOD ONE IN MIND?</div>
-        <div class="contact-main"><h2>Let’s make<br>something <span class="serif-italic">matter.</span></h2><a class="contact-circle" href="mailto:your.email@example.com" aria-label="Email Mukul"><span>Say hello</span><b>↗</b></a></div>
-        <p class="contact-copy">Have a project, an opportunity, or just want to say hi? My inbox is open.</p>
-        <a class="email-link" href="mailto:your.email@example.com">your.email@example.com <span>↗</span></a>
-      </section>
-    </main>
+  <footer class="footer">
+    <a class="logo" href="#home"><span class="logo-mark">MKD</span></a>
+    <span>© <span id="year">2026</span> Mukul · Build. Ride. Grow.</span>
+    <a href="#home" class="back-top">Back to top ↑</a>
+  </footer>
 
-    <footer class="footer"><a class="wordmark" href="#home"><span class="mark">M</span><span>Mukul<span class="accent">.</span></span></a><span>Designed with curiosity. © 2026 Mukul</span><a class="back-top" href="#home">BACK TO TOP ↑</a></footer>
-  </div>
+  <script src="script.js"></script>
 </body>
 </html>
